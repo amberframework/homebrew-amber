@@ -1,4 +1,4 @@
-class AmberCmd < Formula
+class Amber < Formula
   desc "Amber CLI client for generating, scaffolding Amber web apps."
   homepage "https://www.ambercr.io"
   url "https://github.com/Amber-Crystal/amber_cmd/archive/v0.1.13.tar.gz"
