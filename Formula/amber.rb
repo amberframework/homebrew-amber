@@ -1,8 +1,9 @@
 class Amber < Formula
   desc "Amber CLI client for generating, scaffolding Amber web apps."
+  version "0.1.16"
   homepage "https://www.ambercr.io"
-  url "https://github.com/Amber-Crystal/amber_cmd/archive/v0.1.15.tar.gz"
-  sha256 "53cd5a3961658999523ab4045e30512585c61a3a2db0d0015f5414de7d2ffac2"
+  url "https://github.com/Amber-Crystal/amber_cmd/archive/v#{version}.tar.gz"
+  sha256 "ce96509b7e34df86c7e1db3ed9cfe183c3c078b618d2945631d91ec7c2217251"
 
   depends_on "crystal-lang"
   depends_on "openssl"
