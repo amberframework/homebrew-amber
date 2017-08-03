@@ -1,3 +1,5 @@
+# Run brew fetch to get new sha256 after updating version.
+# brew fetch Formula/amber.rb --build-from-source
 class Amber < Formula
   desc "Amber CLI client for generating, scaffolding Amber web apps."
   version "0.1.20"
