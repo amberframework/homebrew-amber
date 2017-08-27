@@ -13,7 +13,7 @@ class Amber < Formula
   def install
     cd buildpath do
       system "shards", "install"
-      system "crystal", "build", "-o", "amber", "src/amber_cmd.cr"
+      system "crystal build -o amber src/amber_cmd.cr -p --no-debug"
       bin.install "amber"
     end
   end
