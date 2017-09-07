@@ -5,7 +5,7 @@ class Amber < Formula
   version "0.2.3"
   homepage "https://www.ambercr.io"
   url "https://github.com/Amber-Crystal/amber/archive/v#{version}.tar.gz"
-  sha256 "d808b6ec7807675069e563eea4aa27a64931e7cc324acbd33ae9cff38e275c86"
+  sha256 "b54f6a1358a76d8f9dee9cba575e5dad897e529ec98238b48b59b4ac936ea613"
 
   depends_on "crystal-lang"
   depends_on "openssl"
