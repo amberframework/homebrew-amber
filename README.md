@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/Amber-Crystal/amber_cmd.svg?branch=master)](https://travis-ci.org/Amber-Crystal/amber)
+[![Travis](https://img.shields.io/travis/amber-crystal/amber.svg)](https://travis-ci.org/Amber-Crystal/amber)
+
 # Amber
 This section provides an introduction into Amber command-line interface. 
 
@@ -11,7 +12,7 @@ You can build the `amber` tool from source:
 
 ```shellsession
 $ git clone git@github.com:amber-crystal/amber.git
-$ cd amber_cmd/
+$ cd amber/
 $ shards install
 $ make
 ```
