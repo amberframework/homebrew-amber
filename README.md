@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/Amber-Crystal/amber_cmd.svg?branch=master)](https://travis-ci.org/Amber-Crystal/amber_cmd)
-# Amber::CMD
+[![Travis](https://img.shields.io/travis/amber-crystal/amber.svg)](https://travis-ci.org/Amber-Crystal/amber)
+
+# Amber
 This section provides an introduction into Amber command-line interface. 
 
 Amber provides a CLI client that makes interfacing with your file system and applications much smoother. The Amber console provides a framework for creating, generating, saffolding and running your Amber project.
@@ -10,8 +11,8 @@ Amber provides a CLI client that makes interfacing with your file system and app
 You can build the `amber` tool from source:
 
 ```shellsession
-$ git clone git@github.com:amber-crystal/amber_cmd.git
-$ cd amber_cmd/
+$ git clone git@github.com:amber-crystal/amber.git
+$ cd amber/
 $ shards install
 $ make
 ```
