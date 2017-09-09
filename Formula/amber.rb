@@ -2,10 +2,10 @@
 # brew fetch Formula/amber.rb --build-from-source
 class Amber < Formula
   desc "Amber CLI client for generating, scaffolding Amber web apps."
-  version "0.2.4"
+  version "0.2.5"
   homepage "https://www.ambercr.io"
   url "https://github.com/Amber-Crystal/amber/archive/v#{version}.tar.gz"
-  sha256 "2c317646db38e2acd30f3c06fe3fbedf5cca59573c0e1c6e986628b1b9e2466c"
+  sha256 "1743bc45afa170763102879e459d79b565bdabf189faca2559955385bb8d0c30"
 
   depends_on "crystal-lang"
   depends_on "openssl"
