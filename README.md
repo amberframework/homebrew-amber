@@ -29,6 +29,10 @@ brew install amberframework/amber/amber
 
 brew tap amberframework/amber
 brew install amber-crystal/amber
+
+# or for specific versions run 
+
+AMBER_VERSION=v0.2.5 brew install amberframework/amber/amber
 ```
 
 ## Commands
