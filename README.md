@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/amber-crystal/amber.svg)](https://travis-ci.org/Amber-Crystal/amber)
+[![Travis](https://img.shields.io/travis/amberframework/amber.svg)](https://travis-ci.org/amberframework/amber)
 
 # Amber
 This section provides an introduction into Amber command-line interface. 
