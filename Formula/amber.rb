@@ -6,9 +6,9 @@ require 'json'
 class Amber < Formula
   desc "Amber CLI client for generating, scaffolding Amber web apps."
   version ENV['AMBER_VERSION'] || JSON.parse(open("https://api.github.com/repos/amberframework/amber/releases/latest").read)["tag_name"]
-  homepage "https://www.ambercr.io"
+  homepage "https://amberframework.org"
   url "https://github.com/amberframework/amber/archive/#{version}.tar.gz"
-  sha256 "16b602d2bc866c748c5ca151297e6b0201f6a939e251f92cd39861b76bd222d9"
+  sha256 "bc55eab6f7d1c9f7fbb3f439ddbb6e1239fdd0c1614e5ae5cd3b4477f801c957"
 
   depends_on "crystal-lang"
   depends_on "openssl"
