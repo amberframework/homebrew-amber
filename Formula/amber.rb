@@ -8,7 +8,7 @@ class Amber < Formula
   version ENV['AMBER_VERSION'] || JSON.parse(open("https://api.github.com/repos/amberframework/amber/releases/latest").read)["tag_name"]
   homepage "https://amberframework.org"
   url "https://github.com/amberframework/amber/archive/#{version}.tar.gz"
-  sha256 "a5b5f7a4568cc52bba9458f705e64fe37884cbbafcb5b779058e0cb1bd67df3a"
+  sha256 "5bc48be991083b3d5d41ed7630a6ec29163d2bab4b29f74979ce495a30888fe1"
 
   depends_on "crystal-lang"
   depends_on "openssl"
