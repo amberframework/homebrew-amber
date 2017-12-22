@@ -23,16 +23,8 @@ You should now be able to run `amber` in the command line.
 Optionally, you can use homebrew to install.
 
 ```shellsession
-brew install amberframework/amber/amber
-
-# or 
-
 brew tap amberframework/amber
-brew install amber-crystal/amber
-
-# or for specific versions run 
-
-AMBER_VERSION=v0.2.5 brew install amberframework/amber/amber
+brew install amberframework/amber
 ```
 
 ## Commands
