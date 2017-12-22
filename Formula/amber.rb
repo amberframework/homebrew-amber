@@ -1,27 +1,18 @@
-# Run brew fetch to get new sha256 after updating version.
-# brew fetch Formula/amber.rb --build-from-source
-require 'open-uri'
-require 'json'
-
 class Amber < Formula
-  desc "Amber CLI client for generating, scaffolding Amber web apps."
-  version ENV['AMBER_VERSION'] || JSON.parse(open("https://api.github.com/repos/amberframework/amber/releases/latest").read)["tag_name"]
-  homepage "https://amberframework.org"
-  url "https://github.com/amberframework/amber/archive/#{version}.tar.gz"
-  sha256 "94e42decca606b3e62386f32394aca7a8cc14386e265530cd77e8487f1b2e8df"
+  desc "CLI client for generating, scaffolding Amber web applications"
+  homepage "https://www.amberframework.org"
+  url "https://github.com/amberframework/amber/archive/v0.3.7.tar.gz"
+  sha256 "7ea92a6be65aaf715c9143311e2fc16937c1fa6d500dac1943c05f03ef1738b5"
 
   depends_on "crystal-lang"
-  depends_on "openssl"
 
   def install
-    cd buildpath do
-      system "shards", "install"
-      system "crystal build -o amber src/amber/cli.cr -p --no-debug"
-      bin.install "amber"
-    end
+    system "shards", "install"
+    system "make", "install", "PREFIX=#{prefix}"
+    bin.install "bin/amber"
   end
 
   test do
-    system "#{bin}/amber", "--version"
+    assert_match "Amber CLI (amberframework.org) - v0.3.7", shell_output("#{bin}/amber -v")
   end
 end
