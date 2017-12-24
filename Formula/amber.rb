@@ -1,8 +1,8 @@
 class Amber < Formula
   desc "CLI client for generating, scaffolding Amber web applications"
   homepage "https://www.amberframework.org"
-  url "https://github.com/amberframework/amber/archive/v0.3.7.tar.gz"
-  sha256 "7ea92a6be65aaf715c9143311e2fc16937c1fa6d500dac1943c05f03ef1738b5"
+  url "https://github.com/amberframework/amber/archive/v0.5.0.tar.gz"
+  sha256 "637873e7f7e5a28307dfb34adeba7120ab9df649cbd5f3f5a70d2cca059f587d"
 
   depends_on "crystal-lang"
 
@@ -13,6 +13,6 @@ class Amber < Formula
   end
 
   test do
-    assert_match "Amber CLI (amberframework.org) - v0.3.7", shell_output("#{bin}/amber -v")
+    assert_match "Amber CLI (amberframework.org) - v0.5.0", shell_output("#{bin}/amber -v")
   end
 end

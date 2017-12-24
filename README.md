@@ -24,7 +24,7 @@ Optionally, you can use homebrew to install.
 
 ```shellsession
 $ brew tap amberframework/amber
-$ brew install amberframework/amber
+$ brew install amber
 ```
 
 ## Development
