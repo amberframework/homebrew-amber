@@ -17,6 +17,6 @@ class Amber < Formula
   end
 
   test do
-    assert_match "Amber CLI (amberframework.org) - v0.6.1", shell_output("#{bin}/amber -v")
+    assert_match "Amber CLI (amberframework.org) - #{version}", shell_output("#{bin}/amber -v")
   end
 end
