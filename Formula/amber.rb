@@ -1,10 +1,10 @@
 class Amber < Formula
-  desc "CLI client for generating, scaffolding Amber web applications"
-  homepage "https://www.amberframework.org"
-  url "https://github.com/amberframework/amber/archive/v0.6.4.tar.gz"
-  sha256 "4b7489d16afc26e2847d4dc74dad54d2f5dc20d1a148a5e0da6bea991bcac68f"
+  desc "CLI client for generating and scaffolding Amber web applications"
+  homepage "https://www.amberframework.org/"
+  url "https://github.com/amberframework/amber/archive/v0.8.0.tar.gz"
+  sha256 "d2706633fccfbce4102077b7455595d0935f5a542d85c68b744eb129edd64c6b"
 
-  depends_on "crystal-lang"
+  depends_on "crystal"
 
   def install
     system "shards", "install"
@@ -25,9 +25,12 @@ class Amber < Formula
     ].each do |path|
       assert_match path, output
     end
+
     cd "test_app" do
       build_app = shell_output("shards build test_app")
-      assert build_app, "Building: test_app"
+      assert_match "Building", build_app
+      assert_predicate testpath/"test_app/bin/test_app", :exist?
     end
   end
 end
+
