@@ -1,5 +1,3 @@
-[![Travis](https://img.shields.io/travis/amberframework/amber.svg)](https://travis-ci.org/amberframework/amber)
-
 # Amber
 This section provides an introduction into Amber command-line interface. 
 
@@ -47,3 +45,4 @@ See opened issues.
 - [bew](https://github.com/fridgerator) Benoit de Chezelles - Member
 - [TechMagister](https://github.com/TechMagister) Arnaud Fernandés - Initial Creator of some borrowed code.
 - [drujensen](https://github.com/drujensen) Dru Jensen - contributor
+- [crimson-knight](https://github.com/crimson-knight) Seth Tucker - contributor
