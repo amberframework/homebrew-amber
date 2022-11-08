@@ -1,8 +1,8 @@
 class Amber < Formula
   desc "CLI client for generating and scaffolding Amber web applications"
   homepage "https://www.amberframework.org/"
-  url "https://github.com/amberframework/amber/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "d3f131290e74b27e44a26bb7faf4d820ed3884910bab02fa72127b660e3dae04"
+  url "https://github.com/amberframework/amber/archive/refs/tags/v1.3.1.tar.gz"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
   depends_on "crystal"
 
